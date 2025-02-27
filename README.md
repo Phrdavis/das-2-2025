@@ -54,3 +54,4 @@ Exemplo:
 
     + Recursos que podem ser facilmente substituidos;
     + Substituição de recursos mais antigos automaticamente devido a descartabilidade
+ 
