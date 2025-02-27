@@ -40,3 +40,11 @@ Exemplo:
     + Sistema responsável por recriar maquinas virtuais sozinha;
     + Aplicar recursos necessários para colocar a aplicação online novamente;
 
+### IaC
+
+    Infraestrutura em forma de codigo
+
+    + Reduz falhas por configuração manual
+    + Propaga mudanças e atualizações de forma uniforme
+    + Agilidade na execução e manutenção de aplicações
+
