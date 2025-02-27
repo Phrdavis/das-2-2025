@@ -44,7 +44,13 @@ Exemplo:
 
     Infraestrutura em forma de codigo
 
-    + Reduz falhas por configuração manual
-    + Propaga mudanças e atualizações de forma uniforme
-    + Agilidade na execução e manutenção de aplicações
+    + Reduz falhas por configuração manual;
+    + Propaga mudanças e atualizações de forma uniforme;
+    + Agilidade na execução e manutenção de aplicações;
 
+### Recursos Descartaveis
+
+    Tratar recursos todos como descartaveis
+
+    + Recursos que podem ser facilmente substituidos;
+    + Substituição de recursos mais antigos automaticamente devido a descartabilidade
