@@ -134,3 +134,51 @@ Exemplo:
     + 36    Regiões
     + 114   Zonas de Disponibilidade
     + 700   Pontos de Presença
+
+## Aula 10/03/2025
+
+### AWS Pops
+
+    Pontos de presença (Data Centers) especializados em busca de conteudo de forma mais rapida
+
+    + Edge Location: Servidores desenhaos para entregar dados com a menor latencia possvel
+    + Regional Cache: Data center que se encontram entre as edge locations e os destinos
+
+### Securing Access - *Topicos de Prova*
+
+    Segurança básica de usuário, permissões de acesso e restrição de conteudo
+
+### Modelo de Responsabilidade Compartilhada
+
+    + IaaS - Infraestrutura como Serviço
+        A responsabilidade é compartilhada entre Cliente/Usuário e Provedor do Serviço
+
+    + S3 - Serviço de Software ( Saas/PaaS )
+        Responsabilidade ainda é compartilhada, porém as maiores responsabilidades ficam nas mãos o provedor do serviço
+
+### Design Principals for Security
+
+    Principios para o pilar de segurança em aplicações
+
+    + Implementar uma forma e armazenar identificações de forma mais segura
+    + Proteção de dados em transito
+    + Aplicação de segurança em todas as camadas de uma aplicação
+    + Manter os usuários longe dos dados
+    + Possuir rastreabilidade, saber as ações de usuários dentro de aplicações 
+    + Se preparar para eventos de segurança (Ataques, vulnerabilidades...)
+    + Automatizar práticas de segurança paa evitar cometer erros ao criar/editar manualmente
+
+### User Permission to Accessa Resources
+
+    Permissão que determinado grupo de usuários possuem, onde dita o que um usuario pode ou não fazer/acessar detro de um sistema
+
+### Principle of least privilege
+
+    + Garantir que usuario possua o nivel de privilegio necessario para acessar o sistema com os recursos necessarios
+
+### Use cryptografia
+
+    Não trafegar codigos/dados abertos na internet
+
+### IAM - Identity and Access Manegement
+
