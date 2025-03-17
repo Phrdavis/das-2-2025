@@ -180,9 +180,59 @@ Exemplo:
 
     Não trafegar codigos/dados abertos na internet
 
-### IAM - Identity and Access Manegement
+## Aula 13/03/2025
+
+### Autenticação
+
+    Confirmar minha identidade. O que eu sei (usuário e senha), o que eu sou (biometria) e o que eu possuo (chave de segurança).
+
+    + Usuário é uma forma de autenticação.
+
+    + Sempre ativar a autenticação multifatorial (MFA).
+
+    + Rotacionar regularmente as credenciais e chaves de acesso de longo prazo.
+
+    + Armazenar as credenciais de forma segura.
+
+    + Evitar o uso do usuário root para tarefas que podem ser realizadas por outros usuários.
+
+    + A primeira ação ao usar o usuário root deve ser habilitar a autenticação multifatorial (MFA).
+
+### Acesso Programático
+
+    Uma Role fornece uma chave de acesso temporária, permitindo que o usuário execute ações específicas enquanto a chave permanecer válida.
 
 
 ## Aula 17/03/2025
 
-### 
+### RBAC Role Base Access Control
+    
+    Permissões definidas de acordo com o seu papél na empresa/sistema
+
+### IAM Policies and Permissions
+
+    Policies e Permissões fornecidas, quais usuários podem acessar determinados recursos ou até mesmo quais recursos podem ser acessados
+
+### Determining Permissions at the Time of Request
+
+    Determina todas as policies de determinado usuário a um recuros para analisar 
+    as permissões determinadas fornecidas pelo administrador
+
+    + Condition: Condição para permitir/recusar determinadas ações mesmo possuindo/não possuindo permissão
+
+### Types Of Storage (EBS - EFS, FXs - S3)
+
+    Tipos de Armazenamento de dados na AWS
+
+    + Block Storage: Armazenamento por blocos, ou seja, os dados são armazenados em partes fixas de blocos.
+    + File Storage (File Share): Armazenamento em arquivo, armazenamento por uma estrutura de hierarquia.
+    + Object Storage: Armazenamento em Objeto, dados atribuidos por atributos e metadados (Tags)
+
+### Amazon S3
+
+    Um dos serviços mais famosos da AWS
+
+    + Virtualmente Limitado: Atualmente não possuem limite de estrutura, porém é limitado por 5TB por objeto/arquivo
+    + Objetos possuem globalmente URLs unicas (Namespace Universais)
+    + Objetos possuem Key, Version ID, Value, Metadata e Subresources
+    + Prefixos: Formas de aplicar estrutura de arquivos dentro do Bucket, mesmo que essa estrutura de fato não exista dentro do S3
