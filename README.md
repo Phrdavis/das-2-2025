@@ -236,3 +236,38 @@ Exemplo:
     + Objetos possuem globalmente URLs unicas (Namespace Universais)
     + Objetos possuem Key, Version ID, Value, Metadata e Subresources
     + Prefixos: Formas de aplicar estrutura de arquivos dentro do Bucket, mesmo que essa estrutura de fato não exista dentro do S3
+
+
+## Aula 24/03/2025
+
+### Ciclo de Vida S3 (Lifecycle Polices)
+
+    Regras que definem ações para determinado  grupo de objetos
+
+    + Transição de classes:Mudança entre classes de armazenamento
+    + Ações de Expiração: Expirar arquivos que não são mais necessários
+
+### S3 Versionamento
+
+    Proteção de objetos contra sobreescritas de objetos 
+
+    + Após habilitar o versionamento, não é possível desabilitar, pois ao habilitar essa função, já é criado uma nova versão de um objeto
+
+### Cross Origin Suport
+
+    Proteção para arquivos e sites de compartilhamento e comunicação na rede
+
+    
+### Data Consistency Model
+
+    S3 sempre irá trabalhar de forma consistência em tempo excepcional
+
+### Cryptografia de Objetos 
+
+    O S3 trabalha sempre com cryptografia
+   
+    + Server side: O backend é criptografado e é responsabilidade do S3
+    + Client side: frontend é responsabilidade do cliente/Usuário
+
+
+### 
