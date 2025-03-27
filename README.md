@@ -270,4 +270,9 @@ Exemplo:
     + Client side: frontend é responsabilidade do cliente/Usuário
 
 
-### 
+## Aula 27/03/2025
+
+### Amazon Costs
+
+    + Pay for what you use: Somente paga pelos recursos q estão sendo consumidos
+    + No change for data transfer: 
