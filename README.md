@@ -275,4 +275,10 @@ Exemplo:
 ### Amazon Costs
 
     + Pay for what you use: Somente paga pelos recursos q estão sendo consumidos
-    + No change for data transfer: 
+    + No change for data transfer
+    + Testes com Python e Conexão com Bucket S3
+
+
+## Aula 31/03/2025
+
+### 
