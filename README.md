@@ -279,6 +279,33 @@ Exemplo:
     + Testes com Python e Conexão com Bucket S3
 
 
-## Aula 31/03/2025
+## Aula 03/04/2025
+
+### EC2 
+    
+    Elastic compute Cloud, permite criar e hospedar sistemas de software com capacidade computacional redimencionável;
+
+    + Serve para qualquer coisa que necessite de um servidor;
+
+    + AMI, uma "foto" do servidor, permitindo criar cópias idênticas do servidor original. Serve para recuperação e repetição;
+
+### EBS 
+    
+    Armazenamento persistente na EC2, diferente da instance store no host, que só armazena arquivos temporariamente;
+
+    + Quanto menos gerenciado, mais controle:
+
+    + (menos gerenciado) Vms, Containers, VPS, PaaS, Serverless (mais gerenciado);
+
+### Compute optimizer 
+
+    IA que recomenda recursos de computação da AWS mais eficientes para workloads, tem versão gratuita e paga;
+
+### File share
+
+    Usar FSx para Windows, EFS para Linux;
+
+
+## Aula 07/04/2025
 
 ### 
