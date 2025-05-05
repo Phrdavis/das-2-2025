@@ -314,3 +314,18 @@ HPC (High Performance Computing): Recomendado agrupar máquinas na mesma AZ ou a
 
 Spread: Estratégia contrária ao HPC, distribuindo instâncias para maior disponibilidade.
 
+Partition: Meio-termo — os dados são divididos entre servidores próximos. Usado com Apache Kafka, Cassandra ou Spark.
+
+EC2 Free Tier: Gratuito por 12 meses.
+
+Modelos de EC2:
+
+On-Demand: Flexível, mais caro.
+
+Reserved: Compromisso de 1 ou 3 anos, mais barato.
+
+Saving Plans: Flexível com cobrança por hora.
+
+Spot: Usa capacidade ociosa da AWS (pode ser interrompido).
+
+
