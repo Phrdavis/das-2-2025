@@ -308,4 +308,9 @@ Exemplo:
 
 ## Aula 07/04/2025
 
-### 
+Instance Metadata: Funciona como uma API REST acessível apenas dentro da AWS, usada para obter informações que o servidor precisa.
+
+HPC (High Performance Computing): Recomendado agrupar máquinas na mesma AZ ou até no mesmo rack para reduzir latência.
+
+Spread: Estratégia contrária ao HPC, distribuindo instâncias para maior disponibilidade.
+
