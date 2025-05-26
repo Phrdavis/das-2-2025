@@ -308,24 +308,97 @@ Exemplo:
 
 ## Aula 07/04/2025
 
-Instance Metadata: Funciona como uma API REST acessível apenas dentro da AWS, usada para obter informações que o servidor precisa.
+    Instance Metadata: Funciona como uma API REST acessível apenas dentro da AWS, usada para obter informações que o servidor precisa.
 
-HPC (High Performance Computing): Recomendado agrupar máquinas na mesma AZ ou até no mesmo rack para reduzir latência.
+    + HPC (High Performance Computing): Recomendado agrupar máquinas na mesma AZ ou até no mesmo rack para reduzir latência.
 
-Spread: Estratégia contrária ao HPC, distribuindo instâncias para maior disponibilidade.
+    + Spread: Estratégia contrária ao HPC, distribuindo instâncias para maior disponibilidade.
 
-Partition: Meio-termo — os dados são divididos entre servidores próximos. Usado com Apache Kafka, Cassandra ou Spark.
+    + Partition: Meio-termo — os dados são divididos entre servidores próximos. Usado com Apache Kafka, Cassandra ou Spark.
 
-EC2 Free Tier: Gratuito por 12 meses.
+    + EC2 Free Tier: Gratuito por 12 meses.
 
-Modelos de EC2:
+## Modelos de EC2:
 
-On-Demand: Flexível, mais caro.
+    + On-Demand: Flexível, mais caro.
 
-Reserved: Compromisso de 1 ou 3 anos, mais barato.
+    + Reserved: Compromisso de 1 ou 3 anos, mais barato.
 
-Saving Plans: Flexível com cobrança por hora.
+    + Saving Plans: Flexível com cobrança por hora.
 
-Spot: Usa capacidade ociosa da AWS (pode ser interrompido).
+    + Spot: Usa capacidade ociosa da AWS (pode ser interrompido).
+
+## Aula 10/04/2025
+
+    O que pensar na hora de criar um banco de dados: escalabilidade, espaço necessário pra armazenar, tipo dos dados e quanto tempo eles precisam durar.
+    
+    + Amazon RDS: serviço da Amazon que gerencia bancos de dados relacionais pra você.
+    
+    + Amazon DynamoDB, Amazon Neptune e Amazon ElastiCache: são serviços da Amazon que cuidam de bancos de dados não relacionais.
+    
+    + Amazon Aurora: banco relacional que funciona igual MySQL (só que 5x mais rápido) ou Postgres (3x mais rápido).
+    
+    + Amazon Aurora Serverless: banco que liga e desliga sozinho conforme a necessidade.
+
+## Aula 17/04/2025
+
+    Connection pooling: melhora a escalabilidade usando um proxy entre a aplicação e o banco, evitando sobrecarregar o servidor com muitas conexões ao mesmo tempo.
+    
+    + Backups no RDS: tem o backup automático (roda a cada 5 dias, guarda de 7 a 35 dias) e o snapshot manual (que fica guardado pra sempre).
+    
+    + KMS (Key Management System): sistema que funciona como um cofre para guardar chaves.
+    
+    + Chave simétrica: mesma chave que criptografa também descriptografa.
+    
+    + Chave assimétrica: a chave que criptografa é diferente da que descriptografa.
+    
+    + DynamoDB: banco NoSQL, serverless, que tem uma performance super rápida (milissegundos). Ideal pra arquitetura baseada em eventos, funciona em modo ativo/ativo, tem criptografia automática e usa IAM roles pra controle de acesso.
+    
+    + Redshift: banco para data warehouse, focado em análises pesadas e dados históricos.
+    
+    + Outros bancos na AWS: DocumentDB, Keyspaces, MemoryDB, Neptune, Timestream, Quantum Ledger.
+
+## Aula 05/05/2025
+
+    + VPC (Virtual Private Cloud): rede virtual que existe só em uma região, totalmente isolada lá. Dá pra limitar a velocidade do tráfego dentro dela.
+    
+    + CIDR: tipo a máscara de rede, define o tamanho da rede.
+    
+    + Subnet pública: recursos nela podem ser acessados pela internet, tanto de dentro pra fora quanto de fora pra dentro.
+
+## Aula 08/05/2025
+
+    Máquinas dentro da VPC que não têm acesso direto à internet não conseguem baixar nada. Pra isso, precisa de uma máquina intermediária (NAT device instance ou NAT gateway).
+    
+    + Banco de dados geralmente fica em VPC privada.
+    
+    + Instâncias que processam batch ficam em VPC privada também.
+    
+    + Instâncias de aplicações web ficam na VPC pública.
+    
+    + NAT gateway também fica em VPC pública.
+    
+    + Security group: regra que define quem pode acessar o que.
+    
+    + Network ACL: valida se a permissão de entrada e saída tá ok.
+    
+    + AWS Network Firewall: firewall que fica numa subnet especial e controla o tráfego de entrada e saída pra internet.
+    
+    + VPC flow logs: registros das tentativas de conexão na rede.
+
+## Aula 19/05/2025
+
+    Topologia full mesh: todas as VPCs se comunicam diretamente entre si.
+
+    + Topologia hub and spoke (Shared VPC): tem um hub central com serviços compartilhados que se conecta com todas as outras VPCs.
+    
+    + Transit Gateway: ajuda a montar essas topologias, é um serviço regional e pago, e pode suportar até 5000 conexões.
+    
+    + VPC Peering: conecta VPCs entre si; é grátis se as VPCs estiverem na mesma região, mas se forem de regiões diferentes, tem custo.
+    
+    + Direct Connect: conexão exclusiva feita por um circuito direto entre o servidor da AWS na região e você.
+
+
+
 
 
