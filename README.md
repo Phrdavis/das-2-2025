@@ -397,8 +397,38 @@ Exemplo:
     + VPC Peering: conecta VPCs entre si; é grátis se as VPCs estiverem na mesma região, mas se forem de regiões diferentes, tem custo.
     
     + Direct Connect: conexão exclusiva feita por um circuito direto entre o servidor da AWS na região e você.
+    
+## Aula – 26/05
 
+    + IAM Groups: Permite agrupar usuários com permissões semelhantes, facilitando o gerenciamento de políticas de acesso.
 
+    + RBAC (Role-Based Access Control): Controle de acesso baseado em papéis, onde um usuário pode assumir temporariamente uma função com permissões específicas.
+
+    + ABAC (Attribute-Based Access Control): Controle de acesso baseado em atributos (como tags, cargo ou departamento), permitindo regras mais dinâmicas e granulares.
+
+    + Amazon Cognito: Serviço gerenciado para autenticação, autorização e gerenciamento de usuários em aplicações web e mobile.
+
+## Aula – 29/05
+
+    + As empresas podem se organizar na AWS de duas formas:
+
+        - Com uma única conta AWS, utilizando diferentes VPCs para segmentar as equipes.
+
+        - Com múltiplas contas AWS, uma para cada equipe, aumentando a separação e controle.
+
+    + AWS Organizations: Ferramenta para gerenciar múltiplas contas AWS de forma centralizada, ideal para estruturas corporativas mais complexas.
+
+    + A conta root (principal) pode convidar outras contas para compor uma hierarquia organizacional, habilitando recursos como faturamento consolidado (consolidated billing).
+
+    + AWS Control Tower: Solução que automatiza a criação e configuração de ambientes multi-conta com base em boas práticas de segurança, compliance e governança.
+
+    + Em segurança da informação, há um equilíbrio entre três pilares: confiabilidade, integridade e disponibilidade – geralmente, um desses precisa ser flexibilizado para priorizar os outros dois.
+
+    + AWS Key Management Service (KMS): Serviço responsável por criar, armazenar e gerenciar chaves de criptografia para proteger dados.
+
+    + Amazon Macie: Serviço que escaneia automaticamente dados armazenados (como no S3) para identificar informações sensíveis (por exemplo, CPF, cartão de crédito).
+
+    + Amazon Inspector: Ferramenta que realiza análises automatizadas para detectar vulnerabilidades conhecidas em instâncias EC2 e containers no ECR (Elastic Container Registry).
 
 
 
