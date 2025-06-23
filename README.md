@@ -430,5 +430,28 @@ Exemplo:
 
     + Amazon Inspector: Ferramenta que realiza análises automatizadas para detectar vulnerabilidades conhecidas em instâncias EC2 e containers no ECR (Elastic Container Registry).
 
+## Aula 02/06/2025
+
+    Funções do monitoramento da aplicação: Saúde operacional, otimização de recursos, performance e segurança.
+
+    + CloudWatch: Ferramenta para coletar, armazenar e analisar métricas da aplicação. Gera métricas padrão e customizáveis, gráficos e alertas.
+
+    + EventBridge: Barramento de eventos, monitoramento em tempo real da AWS.
+
+## Aula 16/06/2025
+
+    + Escalabilidade dos Bancos de Dados na AWS:
+
+        + Aurora: Escala por cluster, tanto vertical quanto horizontal.
+
+        + RDS: Escala por banco, principalmente vertical, com suporte a réplicas de leitura.
+
+        + DynamoDB: Escala horizontal com uso de RCUs e WCUs.
+
+    + ELB (Elastic Load Balancer): Distribui tráfego para múltiplos alvos em uma ou mais AZs, verificando a saúde das máquinas antes de enviar requisições.
+
+        + Tipos de Load Balancer: Application, network, gateway, classic.
+
+    + Route 53: Web service para administrar registros de domínios.
 
 
