@@ -454,4 +454,20 @@ Exemplo:
 
     + Route 53: Web service para administrar registros de domínios.
 
+## Aula 23/06/2025
 
+    Infraestrutura em forma de código
+        + Benefícios: Produtividade aumentada, escalabilidade, menor taxa de erros;
+
+    + CloudFormation: Ferramenta de criação e automação de recursos de maneira atualizada
+    + Drift Detection: Ferramenta de controle de recursos que notifica e até corrige erros de forma automatizada
+    + Amazon Q: Uma IA Generativa desenvolvida pela AWS que é responsável por otimização de tarefas e produtividade
+
+## Aula 26/06/2025
+
+    + Load Balancer: É possível utilizar balanceadores de carga para diminuir o acoplamento entre as camadas da aplicação.
+
+    + Modularização: Em vez de adotar uma arquitetura monolítica, dividir a aplicação em módulos ajuda a reduzir o acoplamento entre os componentes.
+
+    + Simple Queue Service (SQS): Serviço de fila de mensagens da AWS que permite múltiplos produtores e consumidores. Cada mensagem é entregue apenas uma vez para um dos consumidores, promovendo escalabilidade e desacoplamento.
+    
